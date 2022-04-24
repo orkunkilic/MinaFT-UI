@@ -27,3 +27,9 @@
 .farm {
   border: 1px solid black;
 }
+
+.logo {
+  position: absolute;
+  top: 10rem;
+  
+}

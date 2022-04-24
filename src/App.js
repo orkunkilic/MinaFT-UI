@@ -4,7 +4,7 @@ import Content from './Content';
 function App() {
   return (
     <div className="App">
-      <img className='logo' src="" />
+      <img className='logo' src="./logo.png" />
       <Content />
     </div>
   );

@@ -4,9 +4,6 @@
     border-radius: 1rem;
 
 }
-
-
-
 .input_card {
     padding: 20px;
 }
@@ -24,8 +21,7 @@
 .buton {
     border: 1px solid black !important;
     border-radius: 1rem !important ;
-    justify-self: center;
-
+    justify-self: center;s
     width: 10rem;
     height: 2rem !important;
     font-size: 20px;

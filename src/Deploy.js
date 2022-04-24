@@ -4,6 +4,7 @@ import Text from 'antd/lib/typography/Text'
 import Title from 'antd/lib/typography/Title'
 import { Controller, useForm } from "react-hook-form";
 import { FilePicker } from './FilePicker.js'
+import Stored from  './storeDirectory.mjs'
 
 
 

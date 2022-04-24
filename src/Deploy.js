@@ -32,7 +32,7 @@ function Deploy({nextStep}) {
     }
   return (
     <div className='form'>
-        <Title level={3}>Deploy Your NFT Contract</Title>
+        <Title className="bal-ari"level={3}>Deploy Your NFT Contract</Title>
         <FilePicker onPickFiles={onPickFiles}/> 
         <form onSubmit={handleSubmit(onSubmit)}>
             <Controller
@@ -65,7 +65,7 @@ function Deploy({nextStep}) {
 
 
 
-            <input type="Deploy minNFTs!" />
+            <input type="submit" />
         </form>
     </div>
   )

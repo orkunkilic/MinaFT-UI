@@ -5,17 +5,22 @@ import Title from 'antd/lib/typography/Title'
 import { Controller, useForm } from "react-hook-form";
 import { FilePicker } from './Filepicker.js'
 import Stored from  './storeDirectory.mjs'
+import upload from './storeDirectory.mjs';
 
 
 function Deploy({nextStep}) {
     const [baseURI, setBaseURI] = useState('')
     const [baseExtension, setBaseExtension] = useState('')
     const { control, handleSubmit } = useForm();
-    
-    
-    const sourceFile = new File('console.log("hello, world")', 'src/index.js', { type: 'text/javascript' })
 
-    const cid = await client.Stored(["sıçtıktan sonra file  "])
+    const onPickFiles = async (files) => {
+        const result = await upload(files);
+        console.log(result)
+        alert('Uploaded!')
+        //const cid = await client.Stored(["sıçtıktan sonra file  "])
+    } 
+    
+
 
     const onSubmit = data => {
         console.log(data);
@@ -28,7 +33,7 @@ function Deploy({nextStep}) {
   return (
     <div className='form'>
         <Title level={3}>Deploy Your NFT Contract</Title>
-        <FilePicker/> 
+        <FilePicker onPickFiles={onPickFiles}/> 
         <form onSubmit={handleSubmit(onSubmit)}>
             <Controller
                 name="name"

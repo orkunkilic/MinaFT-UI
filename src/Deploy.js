@@ -4,6 +4,7 @@ import Title from 'antd/lib/typography/Title'
 import React, { useState } from 'react'
 import { Controller, useForm } from "react-hook-form";
 
+
 function Deploy() {
     const [baseURI, setBaseURI] = useState('')
     const [baseExtension, setBaseExtension] = useState('')
@@ -13,7 +14,7 @@ function Deploy() {
   return (
     <div className='form'>
         <Title level={3}>Deploy Your NFT Contract</Title>
-        <input type="file" webkitdirectory mozdirectory /> {/* make it folder amk */}
+        <input type="file" webkitdirectory mozdirectory /> {/* make it folder amk xd */}
         <form onSubmit={handleSubmit(onSubmit)}>
             <Controller
                 name="name"

@@ -47,10 +47,10 @@
 }
 
 .titos {
-  width: 50rem;
+  width: 40rem;
   font-size: 5rem !important;
   position: absolute;
-  margin-bottom: 35rem !important;
+  margin-bottom: 30rem !important;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
   color: rgb(238, 192, 230) !important;
   border-bottom: 2px solid rgb(238, 192, 230);

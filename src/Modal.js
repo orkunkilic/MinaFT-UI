@@ -9,7 +9,7 @@ function CustomModal({modal, setModal, setIsUpdated}) {
       onOk={() => {
         setTimeout(() => {
         setModal(false); setIsUpdated(true)
-        }, 1000)
+        }, 500)
       }} 
       onCancel={() => setModal(false)}
     >

@@ -28,7 +28,7 @@ function Deploy({nextStep}) {
             alert('Deployed!');
             nextStep();
         }
-        , 1000)
+        , 500)
     }
   return (
     <div className='form'>
@@ -50,7 +50,7 @@ function Deploy({nextStep}) {
                 control={control}
                 render={({ field }) => <Input placeholder='Total Supply' {...field} />}
             />
-            <Controller
+{/*             <Controller
                 name="name"
                 control={control}
                 defaultValue={baseURI}
@@ -63,7 +63,7 @@ function Deploy({nextStep}) {
                 render={({ field }) => <Input placeholder='Base Extension' disabled={true} {...field} />}
             />
 
-
+ */}
 
             <input type="submit" />
         </form>

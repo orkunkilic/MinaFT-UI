@@ -17,7 +17,7 @@ function Content() {
     }
     return (
         <div className='content'>
-            <Title className='titos'>miNFT</Title>
+            <Title className='titos'>MinaFT</Title>
             <div className='steps'>      
             {step === 0 && <Key privKey={privKey} setPrivKey={setPrivKey} nextStep={nextStep}/>}
             {step === 1 && <Deploy nextStep={nextStep} />}

@@ -14,7 +14,7 @@ function Mint({nextStep}) {
     const mint = async () => {
         setTimeout(() => {
            alert('Minted!')
-        }, 1000)
+        }, 500)
     }
   return (
       <>

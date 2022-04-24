@@ -3,11 +3,12 @@ import React, { useState } from 'react'
 import { Typography } from 'antd';
 import Deploy from './Deploy';
 import Key from './Key';
+import Listing from './Listing';
 
 const { Title } = Typography;
 
 function Content() {
-    const [step, setStep] = useState(0)
+    const [step, setStep] = useState(3)
     const [privKey, setPrivKey] = useState('')
 
     const nextStep = () => {
@@ -20,7 +21,7 @@ function Content() {
             {step === 0 && <Key privKey={privKey} setPrivKey={setPrivKey} nextStep={nextStep}/>}
             {step === 1 && <Deploy />}
             {step === 2 && <Text>Step 3</Text>}
-            {step === 3 && <Text>Step 4</Text>}
+            {step === 3 && <Listing privKey={privKey}/>}
             </div> 
         </div>
     )

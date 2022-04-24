@@ -1,6 +1,7 @@
 import { NFTStorage, File } from 'nft.storage'
 import { getFilesFromPath } from 'files-from-path'
 
+// should be in backend, but just testing in hurry
 const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDQxMmQyMjA3QWEyQUM3ZDVCMjExOTMyOGNjOTRBNDFjMjlCY0FEMmIiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY1MDc2NDkxNDE4OSwibmFtZSI6ImFtc3RlcmRhbSJ9.Xrv36vAkR7jf76-GJqfml-crIduARb23JvkwObkyejU'
 
 async function main() {

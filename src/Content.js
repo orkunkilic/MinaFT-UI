@@ -4,11 +4,12 @@ import { Typography } from 'antd';
 import Deploy from './Deploy';
 import Key from './Key';
 import Listing from './Listing';
+import Mint from './Mint';
 
 const { Title } = Typography;
 
 function Content() {
-    const [step, setStep] = useState(3)
+    const [step, setStep] = useState(0)
     const [privKey, setPrivKey] = useState('')
 
     const nextStep = () => {
@@ -19,8 +20,8 @@ function Content() {
             <Title>MinaFT</Title>
             <div className='steps'>      
             {step === 0 && <Key privKey={privKey} setPrivKey={setPrivKey} nextStep={nextStep}/>}
-            {step === 1 && <Deploy />}
-            {step === 2 && <Text>Step 3</Text>}
+            {step === 1 && <Deploy nextStep={nextStep} />}
+            {step === 2 && <Mint nextStep={nextStep} />}
             {step === 3 && <Listing privKey={privKey}/>}
             </div> 
         </div>

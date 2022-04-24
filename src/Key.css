@@ -1,0 +1,37 @@
+.form {
+    padding: 150px;
+    border: 1px solid black;
+    border-radius: 1rem;
+
+}
+
+
+
+.input_card {
+    padding: 20px;
+}
+
+.inpit {
+    background-color: rgb(255, 255, 255) ;
+    width: 20rem;
+    height: 2.4rem;
+    border: 1px solid black;
+    border-radius: 7px;
+    justify-self: center;
+    margin:auto;
+}
+
+.buton {
+    border: 1px solid black !important;
+    border-radius: 1rem !important ;
+    justify-self: center;
+
+    width: 10rem;
+    height: 2rem !important;
+    font-size: 20px;
+}
+
+.buton:hover {
+    background-color: blueviolet !important;
+ 
+}

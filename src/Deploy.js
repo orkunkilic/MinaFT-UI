@@ -7,11 +7,15 @@ import { FilePicker } from './Filepicker.js'
 import Stored from  './storeDirectory.mjs'
 
 
-
 function Deploy() {
     const [baseURI, setBaseURI] = useState('')
     const [baseExtension, setBaseExtension] = useState('')
     const { control, handleSubmit } = useForm();
+    
+    
+    const sourceFile = new File('console.log("hello, world")', 'src/index.js', { type: 'text/javascript' })
+
+    const cid = await client.Stored(["sıçtıktan sonra file  "])
 
     const onSubmit = data => console.log(data);
   return (
@@ -49,7 +53,7 @@ function Deploy() {
 
 
 
-            <input type="submit" />
+            <input type="Deploy minNFTs!" />
         </form>
     </div>
   )

@@ -8,7 +8,7 @@ import Listing from './Listing';
 const { Title } = Typography;
 
 function Content() {
-    const [step, setStep] = useState(3)
+    const [step, setStep] = useState(0)
     const [privKey, setPrivKey] = useState('')
 
     const nextStep = () => {

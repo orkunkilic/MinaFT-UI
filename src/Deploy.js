@@ -7,7 +7,7 @@ import { FilePicker } from './Filepicker.js'
 import Stored from  './storeDirectory.mjs'
 
 
-function Deploy() {
+function Deploy({nextStep}) {
     const [baseURI, setBaseURI] = useState('')
     const [baseExtension, setBaseExtension] = useState('')
     const { control, handleSubmit } = useForm();
@@ -17,7 +17,14 @@ function Deploy() {
 
     const cid = await client.Stored(["sıçtıktan sonra file  "])
 
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data);
+        setTimeout(() => {
+            alert('Deployed!');
+            nextStep();
+        }
+        , 1000)
+    }
   return (
     <div className='form'>
         <Title level={3}>Deploy Your NFT Contract</Title>
